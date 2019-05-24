@@ -109,7 +109,7 @@ describe('Tests', () => {
             .set('authorization', login)
             .then((res) => {
                 expect(res.body.error).to.be.equal(true);
-				expect(res.body.message).to.be.equal("Cannot read property 'status' of undefined");
+		expect(res.body.message).to.be.equal("Cannot read property 'status' of undefined");
                 done();
             }).
         catch(done);
@@ -122,7 +122,7 @@ describe('Tests', () => {
             .set('authorization', login)
             .then((res) => {
 				expect(200);
-                expect(res.body[0].name).to.be.equal("Wife's account");
+                		expect(res.body[0].name).to.be.equal("Wife's account");
 				expect(res.body[0].account_id).to.be.equal(1);
 				expect(res.body[0].money).to.be.equal(100);
 				expect(res.body[0].active).to.be.equal(true);
@@ -138,8 +138,8 @@ describe('Tests', () => {
             .set('authorization', login)
             .then((res) => {
 				expect(200);
-                expect(res.body.message).to.be.equal("Time lords do not have accounts");
-                done();
+                		expect(res.body.message).to.be.equal("Time lords do not have accounts");
+                		done();
             }).
         catch(done);
     });
