@@ -93,7 +93,7 @@ describe('Tests', () => {
             .set('authorization', login)
             .then((res) => {
 				expect(200);
-                expect(res.body.name).to.be.equal("User The Three");
+                		expect(res.body.name).to.be.equal("User The Three");
 				expect(res.body.user_id).to.be.equal(3);
 				expect(res.body.title).to.be.equal("Salata master");
 				expect(res.body.active).to.be.equal(false);
